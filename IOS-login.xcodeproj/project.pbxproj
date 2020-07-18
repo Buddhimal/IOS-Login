@@ -42,7 +42,6 @@
 		27E83DAC24C36BC700B48C48 = {
 			isa = PBXGroup;
 			children = (
-				27E83DCD24C3723200B48C48 /* CustomUI */,
 				27E83DB724C36BC700B48C48 /* IOS-login */,
 				27E83DB624C36BC700B48C48 /* Products */,
 			);
@@ -59,6 +58,7 @@
 		27E83DB724C36BC700B48C48 /* IOS-login */ = {
 			isa = PBXGroup;
 			children = (
+				27E83DCD24C3723200B48C48 /* CustomUI */,
 				27E83DB824C36BC700B48C48 /* AppDelegate.swift */,
 				27E83DCC24C36D5900B48C48 /* SupportFiles */,
 				27E83DBC24C36BC700B48C48 /* ViewController.swift */,
