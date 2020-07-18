@@ -71,6 +71,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ogZ-ji-7tp" kind="presentation" modalPresentationStyle="fullScreen" id="VuD-0j-zHc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-66-th2">
                                 <rect key="frame" x="40" y="522" width="114" height="24"/>
@@ -112,13 +115,61 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cVj-YY-exa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="L73-sP-3GF">
+            <objects>
+                <viewController id="ogZ-ji-7tp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e5e-T9-uNP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrg-a8-HG0">
+                                <rect key="frame" x="40" y="40" width="19.666666666666671" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="GZf-Qc-GRn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's Your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPc-7U-5qb">
+                                <rect key="frame" x="40" y="97" width="175" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FIRST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMV-tB-PaW">
+                                <rect key="frame" x="40" y="157" width="118" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.54854780439999995" blue="0.56903845070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yPc-7U-5qb" firstAttribute="top" secondItem="Rrg-a8-HG0" secondAttribute="bottom" constant="40" id="2Ry-eQ-8id"/>
+                            <constraint firstItem="yPc-7U-5qb" firstAttribute="leading" secondItem="unT-eG-F3f" secondAttribute="leading" constant="40" id="Qas-Vx-JIU"/>
+                            <constraint firstItem="Rrg-a8-HG0" firstAttribute="top" secondItem="e5e-T9-uNP" secondAttribute="top" constant="40" id="UBj-Hi-8Z3"/>
+                            <constraint firstItem="Rrg-a8-HG0" firstAttribute="leading" secondItem="unT-eG-F3f" secondAttribute="leading" constant="40" id="vgK-FM-sEa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="unT-eG-F3f"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uSD-Ed-MGF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUC-c1-qzu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="138.61607142857142"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="AirbnbLogo" width="2400" height="2400"/>
+        <image name="AirbnbLogo" width="800" height="800"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
     </resources>
 </document>
