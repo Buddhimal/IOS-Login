@@ -311,6 +311,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <segue destination="KHV-k1-UJS" kind="presentation" modalPresentationStyle="fullScreen" id="wWm-4b-RTN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAS-e8-dqo">
                                 <rect key="frame" x="40" y="40" width="19.666666666666671" height="17"/>
@@ -367,6 +370,77 @@
             </objects>
             <point key="canvasLocation" x="2357.971014492754" y="138.61607142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Mru-gr-A3U">
+            <objects>
+                <viewController id="KHV-k1-UJS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6bP-A3-MGx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njB-ib-2eD">
+                                <rect key="frame" x="95" y="83" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.left" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27R-i9-OVc">
+                                <rect key="frame" x="40" y="40" width="19.666666666666671" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="77V-dc-caZ" kind="presentation" modalPresentationStyle="fullScreen" id="UlY-eC-YVG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When is your birthday?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0S-7V-iGZ">
+                                <rect key="frame" x="40" y="94" width="309" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="You must be at least 18 years old to use Airbnb. Others won't see your birthday." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PwI-xl-9Na">
+                                <rect key="frame" x="27" y="176" width="334" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkr-zP-7xN" customClass="ASTextField" customModule="IOS_login" customModuleProvider="target">
+                                <rect key="frame" x="40" y="388" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiC-6F-uzm">
+                                <rect key="frame" x="40" y="334" width="75" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.54854780439999995" blue="0.56903845070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B0S-7V-iGZ" firstAttribute="top" secondItem="27R-i9-OVc" secondAttribute="bottom" constant="30" id="0aP-td-8ny"/>
+                            <constraint firstItem="YiC-6F-uzm" firstAttribute="top" secondItem="PwI-xl-9Na" secondAttribute="bottom" constant="30" id="9mX-M9-KAC"/>
+                            <constraint firstItem="PwI-xl-9Na" firstAttribute="top" secondItem="B0S-7V-iGZ" secondAttribute="bottom" constant="30" id="AYW-rt-e3Z"/>
+                            <constraint firstItem="B0S-7V-iGZ" firstAttribute="leading" secondItem="izf-Lx-bYn" secondAttribute="leading" constant="40" id="J9c-Je-mm0"/>
+                            <constraint firstItem="bkr-zP-7xN" firstAttribute="top" secondItem="YiC-6F-uzm" secondAttribute="bottom" constant="30" id="Kto-BA-eax"/>
+                            <constraint firstItem="bkr-zP-7xN" firstAttribute="leading" secondItem="izf-Lx-bYn" secondAttribute="leading" constant="40" id="QVu-Dk-gw0"/>
+                            <constraint firstItem="YiC-6F-uzm" firstAttribute="leading" secondItem="izf-Lx-bYn" secondAttribute="leading" constant="40" id="V3r-5G-e4L"/>
+                            <constraint firstItem="27R-i9-OVc" firstAttribute="leading" secondItem="6bP-A3-MGx" secondAttribute="leading" constant="40" id="WNG-NC-y8C"/>
+                            <constraint firstItem="PwI-xl-9Na" firstAttribute="leading" secondItem="izf-Lx-bYn" secondAttribute="leading" constant="40" id="dDp-63-RM5"/>
+                            <constraint firstItem="izf-Lx-bYn" firstAttribute="trailing" secondItem="bkr-zP-7xN" secondAttribute="trailing" constant="40" id="iQh-a5-U0r"/>
+                            <constraint firstItem="27R-i9-OVc" firstAttribute="top" secondItem="6bP-A3-MGx" secondAttribute="top" constant="40" id="jRe-mL-DMS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="izf-Lx-bYn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPe-l6-fLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AirbnbLogo" width="800" height="800"/>
@@ -374,6 +448,7 @@
         <image name="arrowshape.turn.up.right.circle" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="UlY-eC-YVG"/>
         <segue reference="5sT-oR-8Sr"/>
         <segue reference="VuD-0j-zHc"/>
     </inferredMetricsTieBreakers>
