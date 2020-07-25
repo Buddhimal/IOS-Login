@@ -248,6 +248,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <segue destination="77V-dc-caZ" kind="presentation" modalPresentationStyle="fullScreen" id="TLQ-hP-TK5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.54854780439999995" blue="0.56903845070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -273,6 +276,97 @@
             </objects>
             <point key="canvasLocation" x="1634.7826086956522" y="138.61607142857142"/>
         </scene>
+        <!--Password View Controller-->
+        <scene sceneID="NHU-cB-XBk">
+            <objects>
+                <viewController id="77V-dc-caZ" customClass="PasswordViewController" customModule="IOS_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tHV-zO-dgo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMJ-Ac-qot">
+                                <rect key="frame" x="40" y="87" width="255" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Your password must include at least one symbol and be 8 or more characters long." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LPL-MW-eOV">
+                                <rect key="frame" x="24" y="178" width="316" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffs-rG-iBC" customClass="ASTextField" customModule="IOS_login" customModuleProvider="target">
+                                <rect key="frame" x="40" y="388" width="334" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="txtPassword"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qp-lU-DnP">
+                                <rect key="frame" x="331" y="781" width="43" height="41"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrowshape.turn.up.right.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="thin">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAS-e8-dqo">
+                                <rect key="frame" x="40" y="40" width="19.666666666666671" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="K3t-M4-mIG" kind="presentation" modalPresentationStyle="fullScreen" id="5sT-oR-8Sr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGS-Zq-z4a">
+                                <rect key="frame" x="323" y="320" width="51" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowPassword:" destination="77V-dc-caZ" eventType="touchUpInside" id="KIb-aK-EvZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-U2-xfU">
+                                <rect key="frame" x="40" y="332" width="89" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.54854780439999995" blue="0.56903845070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Leg-ge-P4W" firstAttribute="trailing" secondItem="nGS-Zq-z4a" secondAttribute="trailing" constant="40" id="1pW-GI-hXd"/>
+                            <constraint firstItem="vAS-e8-dqo" firstAttribute="top" secondItem="tHV-zO-dgo" secondAttribute="top" constant="40" id="3Ya-ev-ppI"/>
+                            <constraint firstItem="ffs-rG-iBC" firstAttribute="leading" secondItem="Leg-ge-P4W" secondAttribute="leading" constant="40" id="4oF-YY-K8v"/>
+                            <constraint firstItem="FsP-U2-xfU" firstAttribute="leading" secondItem="Leg-ge-P4W" secondAttribute="leading" constant="40" id="7Wg-Hf-lC0"/>
+                            <constraint firstItem="Leg-ge-P4W" firstAttribute="bottom" secondItem="2Qp-lU-DnP" secondAttribute="bottom" constant="40" id="Eek-M2-oaU"/>
+                            <constraint firstItem="FsP-U2-xfU" firstAttribute="top" secondItem="LPL-MW-eOV" secondAttribute="bottom" constant="30" id="M1x-Dj-ntd"/>
+                            <constraint firstItem="JMJ-Ac-qot" firstAttribute="leading" secondItem="Leg-ge-P4W" secondAttribute="leading" constant="40" id="PZI-Oh-gFp"/>
+                            <constraint firstItem="Leg-ge-P4W" firstAttribute="trailing" secondItem="ffs-rG-iBC" secondAttribute="trailing" constant="40" id="QOM-KL-15s"/>
+                            <constraint firstItem="vAS-e8-dqo" firstAttribute="leading" secondItem="Leg-ge-P4W" secondAttribute="leading" constant="40" id="ciV-pb-utc"/>
+                            <constraint firstItem="Leg-ge-P4W" firstAttribute="trailing" secondItem="2Qp-lU-DnP" secondAttribute="trailing" constant="40" id="e7U-0L-10B"/>
+                            <constraint firstItem="ffs-rG-iBC" firstAttribute="top" secondItem="FsP-U2-xfU" secondAttribute="bottom" constant="30" id="eZP-PR-JFm"/>
+                            <constraint firstItem="LPL-MW-eOV" firstAttribute="leading" secondItem="Leg-ge-P4W" secondAttribute="leading" constant="40" id="gJK-rn-xrh"/>
+                            <constraint firstItem="nGS-Zq-z4a" firstAttribute="top" secondItem="LPL-MW-eOV" secondAttribute="bottom" constant="30" id="pMh-l0-788"/>
+                            <constraint firstItem="LPL-MW-eOV" firstAttribute="top" secondItem="JMJ-Ac-qot" secondAttribute="bottom" constant="30" id="ry0-Ya-MQE"/>
+                            <constraint firstItem="JMJ-Ac-qot" firstAttribute="top" secondItem="vAS-e8-dqo" secondAttribute="bottom" constant="30" id="yng-E6-9le"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Leg-ge-P4W"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NBl-hc-Oji"/>
+                    <connections>
+                        <outlet property="Ps" destination="ffs-rG-iBC" id="BNf-Hj-Dnn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybS-z5-ylN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.971014492754" y="138.61607142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AirbnbLogo" width="800" height="800"/>
@@ -280,6 +374,7 @@
         <image name="arrowshape.turn.up.right.circle" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aH0-Lo-GPy"/>
+        <segue reference="5sT-oR-8Sr"/>
+        <segue reference="VuD-0j-zHc"/>
     </inferredMetricsTieBreakers>
 </document>

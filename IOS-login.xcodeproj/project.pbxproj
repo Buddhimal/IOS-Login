@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27019CBA24C3934A00396436 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27019CB924C3934A00396436 /* RoundButton.swift */; };
+		27507D1D24CCBD5A00575D7B /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27507D1C24CCBD5A00575D7B /* PasswordViewController.swift */; };
 		27E83DB924C36BC700B48C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E83DB824C36BC700B48C48 /* AppDelegate.swift */; };
 		27E83DBB24C36BC700B48C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E83DBA24C36BC700B48C48 /* SceneDelegate.swift */; };
 		27E83DBD24C36BC700B48C48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E83DBC24C36BC700B48C48 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		27019CB924C3934A00396436 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		27507D1C24CCBD5A00575D7B /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		27E83DB524C36BC700B48C48 /* IOS-login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E83DB824C36BC700B48C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E83DBA24C36BC700B48C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				27E83DCC24C36D5900B48C48 /* SupportFiles */,
 				27E83DBC24C36BC700B48C48 /* ViewController.swift */,
 				27E83DC624C36BCA00B48C48 /* Info.plist */,
+				27507D1C24CCBD5A00575D7B /* PasswordViewController.swift */,
 			);
 			path = "IOS-login";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				27019CBA24C3934A00396436 /* RoundButton.swift in Sources */,
 				27E83DBD24C36BC700B48C48 /* ViewController.swift in Sources */,
 				27E83DCF24C3724F00B48C48 /* ASButton.swift in Sources */,
+				27507D1D24CCBD5A00575D7B /* PasswordViewController.swift in Sources */,
 				27E83DB924C36BC700B48C48 /* AppDelegate.swift in Sources */,
 				27E83DD124C38DEE00B48C48 /* ASTextField.swift in Sources */,
 				27E83DBB24C36BC700B48C48 /* SceneDelegate.swift in Sources */,
